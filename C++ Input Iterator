@@ -1,0 +1,16 @@
+#include <iostream>  
+#include<vector>  
+#include<iterator>  
+using namespace std;  
+int main()  
+{  
+    vector<int> v{1,2,3,4,5};  
+    vector<int>::iterator itr,itr1;  
+    itr=v.begin();  
+    itr1=v.begin()+1;  
+    if(itr==itr1)  
+    std::cout << "Both the iterators are equal" << std::endl;  
+    if(itr!=itr1)  
+    std::cout << "Both the iterators are not equal" << std::endl;  
+    return 0;  
+}  
